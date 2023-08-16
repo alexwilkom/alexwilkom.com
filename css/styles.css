@@ -1,0 +1,169 @@
+:root {
+    --box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+    --blue: #1b66c9;
+    --blue-hover: #207ef8;
+    --pinky: #FF86AB;
+    --white: #FFFFFF;
+    --tomato-hover: #EA4335;
+    --tomato: #d20000;
+    --mustard: #DECA30;
+    --grey: #222;
+    --sans: 'Helvetica Neue', Arial, sans-serif;;
+    --canela: 'Canela Text', Georgia, serif;
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--canela);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* NAVIGATION BAR */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+nav li a {
+    font-family: var(--sans);
+    display: block;
+    text-decoration: none;
+    color: var(--grey);
+}
+nav h1 a {
+    font-family: var(--canela);
+    color: var(--black);
+    font-weight: 500;
+}
+nav h1 a:hover {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.button {
+    padding: 4px 18px;
+    border-radius: 6px;
+    background-color: var(--tomato);
+    color: white;
+}
+.button:hover {
+    text-decoration: none;
+    box-shadow: var(--box-shadow);
+    background-color: var(--tomato-hover);
+}
+
+/* INTRO */
+#intro {
+    padding: 4rem 1rem 7rem 1rem;
+    text-align: center;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-size: 2.5rem;
+}
+
+.name span {
+    color: var(--blue);
+}
+
+#intro h2 {
+    font-size: 2rem;
+}
+
+/* Projects */
+#projects {
+    background-color: var(--blue);
+    color: white;
+}
+
+
+
+/* ABOUT */
+article {
+    padding: 2rem;
+    text-align: justify;
+}
+blockquote {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--sans);
+  }
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 150%;
+}
+footer ul a {
+    color: var(--blue);
+}
+footer ul a:hover {
+    color: var(--blue-hover);
+}
+
+footer h2 {
+    font-family: var(--canela);
+    font-weight: 500;
+}
+  
+
+@media (min-width: 850px) {
+nav, section, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul {
+    gap: 1.5rem;
+}
+nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+}
+article {
+    width: 45rem;
+    margin: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+blockquote {
+    text-align: center;
+}
+}
