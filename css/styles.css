@@ -35,6 +35,19 @@ h3 {
     margin: 0;
 }
 
+.head-content {
+    margin: 2rem 0;
+    color: var(--blue);
+}
+
+nav,
+#intro,
+#projects,
+#contact {
+    width: 85%;
+    margin: 0 auto;
+}
+
 /* NAVIGATION BAR */
 nav ul {
     margin: 0;
@@ -74,19 +87,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.button {
-    padding: 4px 18px;
-    border-radius: 6px;
-    background-color: var(--tomato);
-    color: white;
-}
-
-.button:hover {
-    text-decoration: none;
-    box-shadow: var(--box-shadow);
-    background-color: var(--tomato-hover);
-}
-
 /* INTRO */
 #intro #img-container {
     width: 100%;
@@ -112,21 +112,46 @@ nav a:hover {
 
 /* ABOUT */
 article {
-    padding: 2rem;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+article h2 {
+    margin: 2rem 0;
+    color: var(--blue);
+}
+
+blockquote {
+    margin-left: 0;
+    font-style: italic;
 }
 
 /* FOOTER */
 footer {
-    padding: 1rem;
-    text-align: center;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 1rem 0;
+    margin-top: 3rem;
 }
 
-footer ul {
+#footer-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-weight: 700;
+}
+
+footer ul,
+footer p {
     padding: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 1rem;
 }
 
 footer ul a {
@@ -139,39 +164,23 @@ footer ul a:hover {
     text-decoration: underline;
 }
 
-footer h2 {
-    font-weight: 700;
-}
-
-
-
-@media (min-width: 950px) {
+@media (min-width: 800px) {
 
     nav,
     section,
-    footer {
-        max-width: 900px;
+    article,
+    #footer-container {
+        max-width: 760px;
         margin: 0 auto;
     }
 
     nav ul {
-        gap: 1.2rem;
+        gap: 1.3rem;
     }
 
     nav li:first-child {
         flex-basis: auto;
         text-align: left;
         margin-right: auto;
-    }
-
-    article {
-        width: 45rem;
-        margin: auto;
-        padding: 2rem;
-        /* text-align: justify; */
-    }
-
-    blockquote {
-        text-align: center;
     }
 }
