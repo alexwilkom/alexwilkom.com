@@ -8,24 +8,32 @@
     --tomato: #d20000;
     --mustard: #DECA30;
     --grey: #222;
-    --sans: 'Helvetica Neue', Arial, sans-serif;;
-    --canela: 'Canela Text', Georgia, serif;
+    --sans: 'Helvetica Neue', Arial, sans-serif;
+    ;
+    --spacemono: 'Space Mono', monospace;
+    ;
 }
+
 html {
     box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: var(--canela);
-    font-size: 1.2rem;
+    font-family: var(--spacemono);
     line-height: 2;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -48,29 +56,35 @@ nav li:first-child {
     text-align: center;
     font-size: 1.2rem;
 }
+
 nav li a {
-    font-family: var(--sans);
+    font-family: var(--spacemono);
     display: block;
     text-decoration: none;
     color: var(--grey);
 }
+
 nav h1 a {
-    font-family: var(--canela);
+    font-family: var(--spacemono);
     color: var(--black);
-    font-weight: 500;
+    font-weight: 700;
 }
+
 nav h1 a:hover {
     text-decoration: none;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 .button {
     padding: 4px 18px;
     border-radius: 6px;
     background-color: var(--tomato);
     color: white;
 }
+
 .button:hover {
     text-decoration: none;
     box-shadow: var(--box-shadow);
@@ -81,11 +95,6 @@ nav a:hover {
 #intro {
     padding: 4rem 1rem 7rem 1rem;
     text-align: center;
-}
-
-#intro p {
-    font-size: 1rem;
-    line-height: 1.5;
 }
 
 #intro .name {
@@ -106,15 +115,9 @@ nav a:hover {
     color: white;
 }
 
-
-
 /* ABOUT */
 article {
     padding: 2rem;
-    text-align: justify;
-}
-blockquote {
-    text-align: center;
 }
 
 /* FOOTER */
@@ -122,7 +125,8 @@ footer {
     padding: 1rem;
     text-align: center;
     font-family: var(--sans);
-  }
+}
+
 footer ul {
     padding: 0;
     list-style-type: none;
@@ -131,39 +135,49 @@ footer ul {
     justify-content: center;
     font-size: 150%;
 }
+
 footer ul a {
     color: var(--blue);
 }
+
 footer ul a:hover {
     color: var(--blue-hover);
 }
 
 footer h2 {
-    font-family: var(--canela);
-    font-weight: 500;
+    font-weight: 700;
+    font-family: var(--spacemono);
 }
-  
+
+
 
 @media (min-width: 850px) {
-nav, section, footer {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-nav ul {
-    gap: 1.5rem;
-}
-nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-}
-article {
-    width: 45rem;
-    margin: auto;
-    padding: 2rem;
-    text-align: justify;
-}
-blockquote {
-    text-align: center;
-}
+
+    nav,
+    section,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        gap: 1.2rem;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+
+    article {
+        width: 45rem;
+        margin: auto;
+        padding: 2rem;
+        /* text-align: justify; */
+    }
+
+    blockquote {
+        text-align: center;
+    }
 }
