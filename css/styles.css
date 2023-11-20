@@ -116,6 +116,14 @@ article {
     margin: 2rem auto;
 }
 
+article img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
 article h2 {
     margin: 2rem 0;
     color: var(--blue);
@@ -182,5 +190,14 @@ footer ul a:hover {
         flex-basis: auto;
         text-align: left;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 460px) {
+    article img {
+        width: 100%;
+        height: auto;
+        /* display: block; */
+        float: none;
     }
 }
