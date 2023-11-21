@@ -21,24 +21,30 @@
                 </li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/alexwilkom" target="_blank">Github</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="intro">
-        <div id="img-container">
-            <img src="./images/main-photo.jpeg" alt="Alex Wilkom">
-        </div>
-        <h2 class="name">Hello! My name is <span>Alex Wilkom.</span></h2>
-        <h2>I am a Web Developer.</h2>
-        <p>Currently, I am available to join a passionate team to work towards an exciting project.</p>
-    </section>
+    <section id="contact">
+        <h2 class="head-content">Contact Me</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
 
-    <section id="projects">
-        <h2 class="head-content">Projects</h2>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
     </section>
 
     <footer>

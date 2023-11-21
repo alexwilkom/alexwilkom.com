@@ -1,14 +1,8 @@
 :root {
-    --box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     --blue: #1b66c9;
     --blue-hover: #207ef8;
     --pinky: #FF86AB;
-    --white: #FFFFFF;
-    --tomato-hover: #EA4335;
-    --tomato: #d20000;
-    --mustard: #DECA30;
     --grey: rgba(0, 0, 0, 0.87);
-    --sans: 'Helvetica Neue', Arial, sans-serif;
     --spacemono: 'Space Mono', monospace;
 }
 
@@ -137,9 +131,9 @@ blockquote {
 /* FOOTER */
 footer {
     width: 100%;
-    background-color: aliceblue;
     padding: 1rem 0;
     margin-top: 3rem;
+    background-color: aliceblue;
 }
 
 #footer-container {
