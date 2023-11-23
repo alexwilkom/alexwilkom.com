@@ -3,7 +3,8 @@
     --blue-hover: #207ef8;
     --pinky: #FF86AB;
     --grey: rgba(0, 0, 0, 0.87);
-    --spacemono: 'Space Mono', monospace;
+    --sans: 'Inter', sans-serif;
+    --mono: 'Space Mono', monospace;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
 body {
     padding-bottom: 7.875rem;
     margin: 0;
-    font-family: var(--spacemono);
+    font-family: var(--sans);
     line-height: 2;
     position: relative;
     min-height: 100vh;
@@ -68,14 +69,14 @@ nav li:first-child {
 }
 
 nav li a {
-    font-family: var(--spacemono);
+    font-family: var(--sans);
     display: block;
     text-decoration: none;
     color: var(--grey);
 }
 
 nav h1 a {
-    font-family: var(--spacemono);
+    font-family: var(--sans);
     color: var(--black);
     font-weight: 700;
 }
